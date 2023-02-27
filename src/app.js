@@ -261,6 +261,15 @@ app.get("/best-seller", (req, res) => {
   });
 });
 
+app.get("/error", (req, res) => {
+  res.status(500).send({
+    data: {
+      products: null,
+    },
+    error: "Something went wrong.",
+  });
+});
+
 app.listen(PORT, () => {
   if (process.env.NODE_ENV === "dev") {
     console.log(`API listening on port ${PORT}`);

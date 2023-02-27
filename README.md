@@ -6,6 +6,7 @@ Demo api written in nodejs using express framework. It returns hard-coded Amazon
   - /products - returns 10 products
   - /featured-products - returns 8 products
   - /best-sellers - returns 4 products
+  - /error - simulates error response, returns error string
 - Structure of the response:
   - Success:
     ```json
